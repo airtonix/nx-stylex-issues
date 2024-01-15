@@ -12,5 +12,21 @@
 3. `$ yarn` to install dependencies
 4. `$ yarn nx run useing-ds-package:serve` to run the app
 
+## A note about monorepos
 
+normally you'd expect to see in the `package.json` something like : 
+
+```json
+...
+  "workspaces": [
+    "apps/*",
+    "pkgs/**/*",
+  ]
+...
+```
+
+However, as an "integrated" monorepo, NX.dev takes a different approach: 
+
+- it uses tsconfig path aliases
+- all deps are installed in the root `package.json`
 
