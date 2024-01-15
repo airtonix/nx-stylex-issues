@@ -1,0 +1,31 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@stylex-nxdev-issues/ds": ["pkgs/ds/src/index.stylex.ts"],
+      "@stylex-nxdev-issues/ds-buildable": ["pkgs/ds-buildable/src/index.stylex.ts"],
+      "@stylex-nxdev-issues/ds-buildable-babel": [
+        "pkgs/ds-buildable-babel/src/index.stylex.ts"
+      ],
+      "@stylex-nxdev-issues/ds-buildable-babel-rollup": [
+        "pkgs/ds-buildable-babel-rollup/src/index.stylex.ts"
+      ]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

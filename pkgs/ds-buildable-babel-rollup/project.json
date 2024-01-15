@@ -1,0 +1,26 @@
+{
+  "name": "ds-buildable-babel-rollup",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "ds-buildable-babel-rollup/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/rollup:rollup",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/ds-buildable-babel-rollup",
+        "main": "ds-buildable-babel-rollup/src/index.stylex.ts",
+        "tsConfig": "ds-buildable-babel-rollup/tsconfig.lib.json",
+        "assets": [],
+        "project": "ds-buildable-babel-rollup/package.json",
+        "compiler": "swc",
+        "format": ["cjs", "esm"]
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    }
+  },
+  "tags": []
+}

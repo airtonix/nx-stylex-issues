@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../dist/out-tsc",
+    "declaration": true,
+    "types": ["node", "vite/client"]
+  },
+  "include": ["../ds-buildable-babel-rollup/src/**/*.ts"],
+  "exclude": ["../ds-buildable-babel-rollup/src/**/*.spec.ts", "../ds-buildable-babel-rollup/src/**/*.test.ts"]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "ds-buildable",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "pkgs/ds-buildable/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/pkgs/ds-buildable",
+        "main": "pkgs/ds-buildable/src/index.stylex.ts",
+        "tsConfig": "pkgs/ds-buildable/tsconfig.lib.json",
+        "assets": ["pkgs/ds-buildable/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    }
+  },
+  "tags": []
+}
