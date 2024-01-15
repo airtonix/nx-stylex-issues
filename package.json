@@ -10,7 +10,7 @@
     "@stylexjs/rollup-plugin": "^0.4.1",
     "@stylexjs/stylex": "^0.4.1",
     "@swc/helpers": "~0.5.2",
-    "next": "13.4.4",
+    "next": "13.5.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "tslib": "^2.3.0"
